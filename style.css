@@ -21,27 +21,65 @@ body {
 header {
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
-    height: 75px;
+    height: 90px;
     background-color: black;
-    box-shadow: 
-    0px 0px 30px 0px #4B71EA,
-    0px 0px 30px 0px #750FEB;
-    position: relative;
+    box-shadow: 0px 0px 0px 2px #4A4BEF;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #portifólio {
-    position: absolute;
-    left: 0;
     font-weight: bold;
     color: #4A4BEF;
-    margin-top: 17px;
-    margin-left: 30px;
+    display: flex;
+    margin-right: auto;
+    padding-left: 23px;
+    font-size: clamp(16px, 3vw, 32px);
 }
 
-.links-header {
-    position: absolute;
-    right: 0;
+#links-header {
     display: flex;
+    gap: 15px;
+    font-weight: bolder;
+    padding-right: 10px;
+}
+
+
+.links-header {
     text-decoration: none;
-    
+    position: relative;
+    margin: auto;
+    font-size: clamp(11px, 2vw, 18px);
+    padding-right: 10px;
+    color: #4A4BEF;
+}
+
+.links-header::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;                    /* espessura da linha */
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);          /* cor do underline */
+    transition: width 0.6s ease;   /* animação */
+}
+
+a:hover::after {
+  width: 100%;                    /* underline cresce no hover */
+}
+
+.links-header:hover {
+    cursor: pointer;
+    color: #fdfdfd;
+}
+
+main > img {
+    border-radius: 100%;
+    width: 310px;
+    height: 300px;
+    margin: auto;
+    transform: translate(300px, 160px);
+    box-shadow: 0px 0px 0px 4px #4A4BEF;
 }
