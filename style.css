@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor0: #BD52EB;
+    --cor1: #8554EA;
+    --cor2: #750FEB;
+    --cor3: #4B71EA;
+    --cor4: #4A4BEF;
+    --cor5: #4221EA;
+}
+
+body {
+    background-color: rgb(49, 48, 48);
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    height: 75px;
+    background-color: black;
+    box-shadow: 
+    0px 0px 30px 0px #4B71EA,
+    0px 0px 30px 0px #750FEB;
+    position: relative;
+}
+
+#portifólio {
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #4A4BEF;
+    margin-top: 17px;
+    margin-left: 30px;
+}
+
+.links-header {
+    position: absolute;
+    right: 0;
+    display: flex;
+    text-decoration: none;
+    
+}
