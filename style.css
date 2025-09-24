@@ -23,7 +23,7 @@ header {
     margin: auto;
     height: 90px;
     background-color: black;
-    box-shadow: 0px 0px 3px 3px #4a4aefa8;
+    box-shadow: 0px 0px 3px 3px var(--cor4);
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -31,7 +31,7 @@ header {
 
 #portifólio {
     font-weight: bold;
-    color: #4A4BEF;
+    color: var(--cor4);
     display: flex;
     margin-right: auto;
     padding-left: 23px;
@@ -52,7 +52,7 @@ header {
     margin: auto;
     font-size: clamp(11px, 2vw, 18px);
     padding-right: 10px;
-    color: #4A4BEF;
+    color: var(--cor4);
 }
 
 .links-header::after {
@@ -81,14 +81,14 @@ main > img {
     height: 400px;
     margin: auto;
     transform: translate(300px, 160px);
-    box-shadow: 0px 0px 0px 4px #4A4BEF;
-    outline: 2px solid #4A4BEF;     /* borda externa */
-    outline-offset: 10px;          /* espaço entre elas */
+    box-shadow: 0px 0px 0px 4px var(--cor4);
+    outline: 2px solid var(--cor4);     /* borda externa */
+    outline-offset: 13px;          /* espaço entre elas */
 }
 
 #inicio {
     color: white;
-    transform: translate(830px, -160px);
+    transform: translate(830px, -220px);
     width: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -104,7 +104,7 @@ main > img {
 }
 
 #ano {
-    background-color: #8554EA;
+    background-color: var(--cor1);
     width: 75px;
     text-align: center;
     border-radius: 30px;
@@ -115,17 +115,17 @@ main > img {
 #inicio-h2 {
     font-size: 35px;
     margin-bottom: 30px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 #inicio-h2 span {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #4221EA; /* cursor */
+  border-right: 3px solid var(--cor4); /* cursor */
   animation: escrever 5s steps(25, end) infinite alternate,
   blink 0.7s infinite step-end alternate;
-  color: #4221EA;
+  color: var(--cor4);
   transform: translateY(10px);
 }
 
@@ -141,6 +141,30 @@ main > img {
 
 .botão-inicio {
     background-color: transparent;
-    border: 2px solid #8554EA;
-    
+    border: 2px solid var(--cor5);
+    margin-top: 40px;
+    height: 55px;
+    width: 200px;
+    font-weight: bolder;
+    font-size: 15px;
+    box-shadow: 0px 0px 5px 0px var(--cor5);
+    border-radius: 10px;
+    color: var(--cor5);
+    gap: 20px;
+}
+
+#btn1 {
+    margin-right: 20px;
+}
+
+.botão-inicio:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 3px var(--cor5);
+    transform: translate(2px, -3px);
+}
+
+.botão-inicio > img {
+    color: var(--cor5);
+    transform: translate(-9px, 3px);
+    height: 18px;
 }
