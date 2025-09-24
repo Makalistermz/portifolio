@@ -82,4 +82,6 @@ main > img {
     margin: auto;
     transform: translate(300px, 160px);
     box-shadow: 0px 0px 0px 4px #4A4BEF;
+    outline: 2px solid #4A4BEF;     /* borda externa */
+    outline-offset: 10px;          /* espaço entre elas */
 }
