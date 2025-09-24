@@ -23,7 +23,7 @@ header {
     margin: auto;
     height: 90px;
     background-color: black;
-    box-shadow: 0px 0px 0px 2px #4A4BEF;
+    box-shadow: 0px 0px 3px 3px #4a4aefa8;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -77,11 +77,70 @@ a:hover::after {
 
 main > img {
     border-radius: 100%;
-    width: 310px;
-    height: 300px;
+    width: 390px;
+    height: 400px;
     margin: auto;
     transform: translate(300px, 160px);
     box-shadow: 0px 0px 0px 4px #4A4BEF;
     outline: 2px solid #4A4BEF;     /* borda externa */
     outline-offset: 10px;          /* espaço entre elas */
+}
+
+#inicio {
+    color: white;
+    transform: translate(830px, -160px);
+    width: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#inicio-h1 {
+    font-size: 80px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#inicio > p {
+    font-size: 20px;
+}
+
+#ano {
+    background-color: #8554EA;
+    width: 75px;
+    text-align: center;
+    border-radius: 30px;
+    color: black;
+    transform: translate(240px, -23px);
+}
+
+#inicio-h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+#inicio-h2 span {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #4221EA; /* cursor */
+  animation: escrever 5s steps(25, end) infinite alternate,
+  blink 0.7s infinite step-end alternate;
+  color: #4221EA;
+  transform: translateY(10px);
+}
+
+/* Anima a escrita e o apagar */
+@keyframes escrever {
+  from { width: 0; }
+  to { width: 23ch; } /* quantidade de caracteres do texto */
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.botão-inicio {
+    background-color: transparent;
+    border: 2px solid #8554EA;
+    
 }
