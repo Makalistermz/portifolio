@@ -19,7 +19,7 @@ canvas#bg {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 80vh;
     z-index: -1;
     background-color: rgb(0, 0, 0);
 }
@@ -37,7 +37,7 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 120px;
+    margin-bottom: 150px;
 }
 
 .fade-in {
@@ -107,7 +107,7 @@ main {
 
 }
 
-main > img {
+#redonda {
     border-radius: 100%;
     width: clamp(180px, 90%, 390px); /* mínimo 180px, cresce até 390px */
     height: 380px;
@@ -159,7 +159,7 @@ main > img {
 /* Anima a escrita e o apagar */
 @keyframes escrever {
   from { width: 0; }
-  to { width: 23ch; } /* quantidade de caracteres do texto */
+  to { width: 13ch; } /* quantidade de caracteres do texto */
 }
 
 @keyframes blink {
@@ -180,6 +180,15 @@ main > img {
     gap: 20px;
 }
 
+@media (max-width: 768px) {
+    .botão-inicio {
+        margin: 15px auto;       /* centraliza no meio */
+        width: 80%;  
+        max-width: 250px;        /* não passa disso */
+        text-align: center;
+    }
+}
+
 #btn1 {
     margin-right: 20px;
 }
@@ -195,4 +204,10 @@ main > img {
     transform: translate(-9px, 3px);
     height: 18px;
 
+}
+
+#sobre {
+    color: #fdfdfd;
+    background-color: black;
+    margin-top: 85px;
 }
