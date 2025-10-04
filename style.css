@@ -79,6 +79,7 @@ header {
     font-size: clamp(11px, 2vw, 18px);
     padding-right: 10px;
     color: var(--cor4);
+    transition: 1s;
 }
 
 .links-header::after {
@@ -155,24 +156,24 @@ main {
 }
 
 #inicio-h2 span {
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
   border-right: 3px solid var(--cor4); /* cursor */
-  animation: escrever 5s steps(25, end) infinite alternate,
-  blink 0.7s infinite step-end alternate;
-  color: var(--cor4);
-  transform: translateY(10px);
+    animation: escrever 5s steps(25, end) infinite alternate,
+    blink 0.7s infinite step-end alternate;
+    color: var(--cor4);
+    transform: translateY(10px);
 }
 
 /* Anima a escrita e o apagar */
 @keyframes escrever {
-  from { width: 0; }
+    from { width: 0; }
   to { width: 13ch; } /* quantidade de caracteres do texto */
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
+    50% { border-color: transparent; }
 }
 
 .botão-inicio {
@@ -187,6 +188,7 @@ main {
     border-radius: 10px;
     color: var(--cor5);
     gap: 20px;
+    transition: 0.5s;
 }
 
 .botão-inicio > a {
@@ -243,7 +245,7 @@ main {
 
 #sobre-h1 {
     margin-bottom: 55px;
-    font-size: 35px;
+    font-size: 45px;
     color: var(--cor4);
 }
 
@@ -266,7 +268,6 @@ main {
 
 }
 
-/* Texto */
 #sobre-texto {
     max-width: 600px;
     text-align: center;
@@ -291,7 +292,6 @@ main {
     color: var(--cor4);
 }
 
-/* Skills */
 #Habilidades {
     display: flex;
     flex-wrap: wrap;
@@ -329,4 +329,84 @@ main {
 
 }
 
+#meus-servicos {
+    color: white;
+    min-height: 100vh; /* ocupa a tela inteira */
+}
 
+#cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /*quebra de linha*/
+    gap: 20px;
+}
+
+.cards {
+    border-radius: 10px;
+}
+
+.cards img {
+    margin-left: 41%;
+    margin-top: 25px;
+    height: 80px;
+    width: 80px;
+}
+
+#card-1 {
+    box-shadow: 2px 2px 10px 2px var(--cor5);
+    transition: 0.4s;
+}
+
+#card-1:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px black;
+    transform: translate(3px , -3px);
+}
+
+#card-2 {
+    box-shadow: 2px 2px 10px 2px var(--cor5);
+    transition: 0.4s;
+}
+
+#card-2:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px black;
+    transform: translate(3px , -3px);
+}
+
+#card-3 {
+    box-shadow: 2px 2px 10px 2px var(--cor5);
+    transition: 0.4s;
+}
+
+#card-3:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 0px black;
+    transform: translate(3px , -3px);
+}
+
+#meus-servicos h1 {
+    font-size: 45px;
+    color: var(--cor4);
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.cards h2 {
+    text-align: center;
+    color: var(--cor5);
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.cards p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.cards {
+    background-color: rgb(0, 0, 0);
+    height:380px;
+    width: 380px;
+}
