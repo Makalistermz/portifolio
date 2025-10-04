@@ -11,67 +11,65 @@
         <h1 id="portifólio">Portifólio</h1>
         <div id="links-header">
             <a href="#inicio" class="links-header">Início</a>
-            <a href="#" class="links-header">Sobre mim</a>
+            <a href="#sobre" class="links-header">Sobre mim</a>
             <a href="#" class="links-header">Projetos</a>
             <a href="#" class="links-header">Contato</a>
         </div>
     </header>
-    <main class="fade-in">
+    <main>
+
         <img src="imagens/WhatsApp Image 2025-09-23 at 20.38.42.jpeg" alt="Minha foto" id="redonda">
-        <div id="inicio">
-            <script>
-            const canvas = document.createElement("canvas");
-            canvas.id = "bg";
-            document.body.appendChild(canvas);
-            const ctx = canvas.getContext("2d");
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+        <section id="inicio" class="fade-in">
 
-            const stars = [];
-            const numStars = 100;
-
-            for (let i = 0; i < numStars; i++) {
-                stars.push({
-                x: Math.random() * canvas.width,
-                        y: Math.random() * canvas.height,
-                radius: Math.random() * 2,
-                dx: (Math.random() - 0.5) * 0.5,
-                dy: (Math.random() - 0.5) * 0.5
-                });
-            }
-
-            function animate() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                ctx.fillStyle = "blue";
-                for (let i = 0; i < stars.length; i++) {
-                const s = stars[i];
-                ctx.beginPath();
-                ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
-                ctx.fill();
-
-                s.x += s.dx;
-                s.y += s.dy;
-
-                if (s.x < 0 || s.x > canvas.width) s.dx *= -1;
-                if (s.y < 0 || s.y > canvas.height) s.dy *= -1;
-                }
-                        requestAnimationFrame(animate);
-            }
-            animate();
-            window.addEventListener("resize", () => {
+                <script>
+                const canvas = document.createElement("canvas");
+                canvas.id = "bg";
+                document.body.appendChild(canvas);
+                const ctx = canvas.getContext("2d");
                 canvas.width = window.innerWidth;
-                        canvas.height = window.innerHeight;
-            });
-            </script>
+                canvas.height = window.innerHeight;
+                const stars = [];
+                const numStars = 100;
+                for (let i = 0; i < numStars; i++) {
+                    stars.push({
+                    x: Math.random() * canvas.width,
+                            y: Math.random() * canvas.height,
+                    radius: Math.random() * 2,
+                    dx: (Math.random() - 0.5) * 0.5,
+                    dy: (Math.random() - 0.5) * 0.5
+                    });
+                }
+                function animate() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.fillStyle = "blue";
+                    for (let i = 0; i < stars.length; i++) {
+                    const s = stars[i];
+                    ctx.beginPath();
+                    ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
+                    ctx.fill();
+                    s.x += s.dx;
+                    s.y += s.dy;
+                    if (s.x < 0 || s.x > canvas.width) s.dx *= -1;
+                    if (s.y < 0 || s.y > canvas.height) s.dy *= -1;
+                    }
+                            requestAnimationFrame(animate);
+                }
+                animate();
+                window.addEventListener("resize", () => {
+                    canvas.width = window.innerWidth;
+                            canvas.height = window.innerHeight;
+                });
+                </script>
 
-            <p>Olá, eu sou o Makalister</p>
-            <h1 id="inicio-h1">Makalister Dev</h1>
-            <h2 id="inicio-h2">Eu sou um <span>Dev Front-End</span></h2>
-            <p>Apaixonado por criar interfaces modernas, responsivas e interativas. Trabalho com <br> HTML, CSS e JavaScript, sempre buscando transformar ideias em experiências digitais incríveis.</p>
-            <button class="botão-inicio" id="btn1"><img src="imagens/aviao-de-papel (2).png" alt="avião de papel">ME CONTRATE</button>
-            <button class="botão-inicio" id="btn2"><img src="imagens/codigo.png" alt="código">VER PROJETOS</button>
-        </div>
-        <section id="sobre">
+                <p>Olá, eu sou o Makalister</p>
+                <h1 id="inicio-h1">Makalister Dev</h1>
+                <h2 id="inicio-h2">Eu sou um <span>Dev Front-End</span></h2>
+                <p>Apaixonado por criar interfaces modernas, responsivas e interativas. Trabalho com <br> HTML, CSS e JavaScript, sempre buscando transformar ideias em experiências digitais incríveis.</p>
+                <button class="botão-inicio" id="btn1"><img src="imagens/aviao-de-papel (2).png" alt="avião de papel"> <a href="https://wa.me/5527995128081" target="_blank">ME CONTRATE</a> </button>
+                <button class="botão-inicio" id="btn2"><img src="imagens/codigo.png" alt="código">VER PROJETOS</button>
+        </section>
+
+        <section id="sobre" class="fade-in">
             <h1 id="sobre-h1">Sobre Mim</h1>
             <div id="sobre-container">
 
@@ -100,6 +98,27 @@
                 </div>
             </div>
         </section>
+
+        <section id="meus-servicos">
+            <h1>Meus Servisos</h1>
+
+            <div id="card-1" class="cards">
+                <h2>Desenvolvimento Web</h2>
+                <p>Criação de sites modernos, rápidos e funcionais, com boas práticas e foco em performance.</p>
+            </div>
+
+            <div id="card-2" class="cards">
+                <h2>Design Responsivo</h2>
+                <p>Sites que funcionam perfeitamente em qualquer dispositivo, do celular ao computador.</p>
+            </div>
+
+            <div id="card-3" class="cards">
+                <h2>UI/UX Design</h2>
+                <p>Interfaces bonitas e intuitivas, com foco na melhor experiência do usuário.</p>
+            </div>
+
+        </section>
+
     </main>
 </body>
 </html>

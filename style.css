@@ -14,6 +14,10 @@
     --cor5: #4221EA;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 canvas#bg {
     position: fixed;
     top: 0;
@@ -37,7 +41,9 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 150px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000; /* fica acima dos outros elementos */
 }
 
 .fade-in {
@@ -110,12 +116,12 @@ main {
 #redonda {
     border-radius: 100%;
     width: clamp(180px, 90%, 390px); /* mínimo 180px, cresce até 390px */
-    height: 380px;
+    height: 400px;
     display: block;
-    margin: 0px;
     box-shadow: 0px 0px 0px 4px var(--cor4);
     outline: 2px solid var(--cor4);     /* borda externa */
-    outline-offset: 13px;          /* espaço entre elas */
+    outline-offset: 13px;
+    margin-top: 78px;          /* espaço entre elas */
 }
 
 #inicio {
@@ -126,6 +132,9 @@ main {
     max-width: 600px;
     word-wrap: break-word;
     text-align: left;
+    min-height: 100vh; /* ocupa a tela inteira */
+    align-content: center;
+    margin-top: 75px;
 }
 
 #inicio-h1 {
@@ -180,13 +189,13 @@ main {
     gap: 20px;
 }
 
-@media (max-width: 768px) {
-    .botão-inicio {
-        margin: 15px auto;       /* centraliza no meio */
-        width: 80%;  
-        max-width: 250px;        /* não passa disso */
-        text-align: center;
-    }
+.botão-inicio > a {
+    text-decoration: none;
+    color: var(--cor5);
+}
+
+.botão-inicio > a:hover {
+    text-decoration: none;
 }
 
 #btn1 {
@@ -206,12 +215,30 @@ main {
 
 }
 
+@media (max-width: 768px) {
+    .botão-inicio {
+        margin: 15px auto;       /* centraliza no meio */
+        width: 80%;  
+        max-width: 250px;        /* não passa disso */
+        text-align: center;
+    }
+
+    #inicio {
+        margin-top: -100px;
+    }
+
+    #sobre {
+        margin-top: -100px;
+    }
+
+}
+
 #sobre {
-background-color: black;
-color: white;
-text-align: center;
-padding: 0px;
-margin-top: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    min-height: 100vh; /* ocupa a tela inteira */
 }
 
 #sobre-h1 {
@@ -241,21 +268,21 @@ margin-top: 50px;
 
 /* Texto */
 #sobre-texto {
-  max-width: 600px;
-  text-align: center;
+    max-width: 600px;
+    text-align: center;
 }
 
 #sobre-texto h2 {
-  font-size: 28px;
-  color: var(--cor4);
-  margin-bottom: 25px;
+    font-size: 28px;
+    color: var(--cor4);
+    margin-bottom: 25px;
 }
 
 #sobre-texto p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-  text-align: justify;
-  font-size: 17px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 17px;
 }
 
 #sobre-texto h3 {
@@ -266,38 +293,40 @@ margin-top: 50px;
 
 /* Skills */
 #Habilidades {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 #Habilidades span {
-  background: #000000;
-  color: var(--cor5);
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-size: 14px;
-  transition: 0.3s;
-  margin-top: 30px;
-  text-decoration: none;
+    background: #000000;
+    color: var(--cor5);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+    margin-top: 30px;
+    text-decoration: none;
 }
 
 #habilidades span:hover {
-  background: var(--cor5);
-  color: #ffffff;
-  background-color: #4221EA;
-  transform: scale(1.05);
-  cursor: pointer;
-  transform: translate();
-  text-decoration: none;
+    background: var(--cor5);
+    color: #ffffff;
+    background-color: #4221EA;
+    transform: scale(1.05);
+    cursor: pointer;
+    transform: translate();
+    text-decoration: none;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-  #sobre-container {
+    #sobre-container {
     flex-direction: column;
     text-align: center;
 }
 
 }
+
+
