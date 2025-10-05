@@ -30,6 +30,7 @@ canvas#bg {
 
 body {
     background-color: black;
+    color: white;
 }
 
 header {
@@ -409,4 +410,77 @@ main {
     background-color: rgb(0, 0, 0);
     height:380px;
     width: 380px;
+}
+
+#meus-projetos h1 {
+    color: var(--cor4);
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 70px;
+}
+
+#meus-projetos img {
+    height: 200px;
+    width: 380px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.projetos span {
+    box-shadow: 0px 0px 0px 1px var(--cor5);
+    border-radius: 20px;
+    padding: 0px 10px;
+    margin-left: 20px;
+    color: var(--cor5);
+}
+
+#projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.projetos {
+    height: 440px;
+    width: 380px;
+    background-color: #000000;
+    border: 1px solid var(--cor5);
+    border-radius: 10px;
+    perspective: 1000px; /* dá o efeito 3D */
+    transition: transform 0.7s ease;
+}
+
+.projetos p {
+    text-align: justify;
+    margin-top: 10px;
+    font-size: 13px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.projetos:hover {
+    transform: rotateY(15deg) rotateX(5deg) scale(1.05);
+    box-shadow: 0px 0px 10px 3px var(--cor2);
+}
+
+.projetos button {
+    height: 30px;
+    width: 90px;
+    margin-left: 30px;
+    margin-top: 18px;
+    border-radius: 15px;
+    background-color: black;
+    border: 1px solid var(--cor5);
+}
+
+.projetos button:hover {
+    box-shadow: 0px 0px 20px 2px var(--cor2);
+    cursor: pointer;
+}
+
+.projetos a {
+    text-decoration: none;
+    color: var(--cor3);
 }

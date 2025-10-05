@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header class="fade-in"> 
         <h1 id="portifólio">Portifólio</h1>
         <div id="links-header">
             <a href="#inicio" class="links-header">Início</a>
             <a href="#sobre" class="links-header">Sobre mim</a>
-            <a href="#" class="links-header">Projetos</a>
+            <a href="#projetos" class="links-header">Projetos</a>
             <a href="#" class="links-header">Contato</a>
         </div>
     </header>
@@ -21,8 +22,8 @@
         <img src="imagens/WhatsApp Image 2025-09-23 at 20.38.42.jpeg" alt="Minha foto" id="redonda">
         <section id="inicio" class="fade-in">
 
-                <script>
-                const canvas = document.createElement("canvas");
+    <script>
+        const canvas = document.createElement("canvas");
                 canvas.id = "bg";
                 document.body.appendChild(canvas);
                 const ctx = canvas.getContext("2d");
@@ -59,14 +60,14 @@
                     canvas.width = window.innerWidth;
                             canvas.height = window.innerHeight;
                 });
-                </script>
+    </script>
 
                 <p>Olá, eu sou o Makalister</p>
                 <h1 id="inicio-h1">Makalister Dev</h1>
                 <h2 id="inicio-h2">Eu sou um <span>Dev Front-End</span></h2>
                 <p>Apaixonado por criar interfaces modernas, responsivas e interativas. Trabalho com <br> HTML, CSS e JavaScript, sempre buscando transformar ideias em experiências digitais incríveis.</p>
                 <button class="botão-inicio" id="btn1"><img src="imagens/aviao-de-papel (2).png" alt="avião de papel"> <a href="https://wa.me/5527995128081" target="_blank">ME CONTRATE</a> </button>
-                <button class="botão-inicio" id="btn2"><img src="imagens/codigo.png" alt="código">VER PROJETOS</button>
+                <button class="botão-inicio" id="btn2"><img src="imagens/codigo.png" alt="código"><a href="#projetos">VER PROJETOS</a></button>
         </section>
 
         <section id="sobre" class="fade-in">
@@ -117,6 +118,34 @@
                     <img src="imagens/usuario.png" alt="usuário">
                     <h2>UI/UX Design</h2>
                     <p>Interfaces bonitas e intuitivas, com foco na melhor experiência do usuário.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="meus-projetos" class="fade-in">
+            <h1>Meus Projetos</h1>
+
+            <div id="projetos">
+                <div id="android" class="projetos">
+                    <img src="imagens/android.jpg" alt="android">
+                    <span>Desenvolovimento web</span>
+                    <p>Este projeto é um site totalmente responsivo, criado para contar a história do Android e compartilhar curiosidades sobre suas versões, mascotes e evoluções. A proposta é tornar o conteúdo acessível e interessante para qualquer público, com um design adaptado para computadores e celulares. Além de informar, o site também demonstra o uso de boas práticas em desenvolvimento web, unindo conhecimento tecnológico e criatividade.</p>
+                    <button><a href="">Acesse</a></button>
+                </div>
+
+                <div id="cordel" class="projetos">
+                    <img src="imagens/joaninha.jpg" alt="joaninha">
+                    <span>Desenvolvimento web</span>
+                    <p>Este mini projeto apresenta o cordel moderno de Milton Duarte em formato digital, utilizando o efeito parallax para dar profundidade e dinamismo à leitura. O site é totalmente responsivo, garantindo que o conteúdo seja apreciado tanto em computadores quanto em dispositivos móveis.</p>
+                    <button><a href="">Acesse</a></button>
+                </div>
+
+                <div id="social" class="projetos">
+                    <img src="imagens/redes-sociais.jpg" alt="redes sociais">
+                    <span>Desenvolvimento web</span>
+                    <p>O Projeto Social simula a tela de um telefone, onde ao clicar nos ícones das redes sociais, o conteúdo aparece dinamicamente dentro do aparelho. O site é interativo e responsivo, pensado para mostrar de forma criativa como as redes sociais fazem parte do nosso dia a dia, além de demonstrar a aplicação de HTML, CSS e JavaScript em interfaces modernas.</p>
+                    <button><a href="">Acesse</a></button>
                 </div>
             </div>
 
