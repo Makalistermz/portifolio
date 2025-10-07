@@ -190,9 +190,7 @@
 
     </main>
 
-    <footer>
-
-        <section id="contatar" class="fade-in">
+    <section id="contatar" class="fade-in">
             <h1>Entre em contato</h1>
 
             <div id="entre-contato">
@@ -201,37 +199,49 @@
                 <p>Se você tem uma ideia, precisa de ajuda no desenvolvimento ou deseja compartilhar experiências, entre em contato comigo. Estou aberto a conversar, tirar dúvidas e colaborar em projetos criativos e inovadores.
                 Meu objetivo é facilitar a comunicação e oferecer suporte para que cada projeto seja desenvolvido da melhor forma possível, sempre com atenção aos detalhes e foco em bons resultados.</p>
 
-                <div id="email">
+                <div id="email" class="info-iten">
                     <h3>Email</h3>
                     <img src="#" alt="">
                     <p>makalistermutzzager@gmail.com</p>
                 </div>
 
-                <div id="telefone">
+                <div id="telefone" class="info-iten">
                     <h3>Telefone</h3>
                     <img src="#" alt="">
                     <p>+55 (27) 99512-8081</p>
                 </div>
 
-                <div id="localizacao">
+                <div id="localizacao" class="info-iten">
                     <h3>Localização</h3>
                     <img src="#" alt="">
                     <p>Espirito Santo - ES</p>
                 </div>
 
             </div>
-
+        
             <div id="formulario">
 
                 <form action="https://formspree.io/f/mnnbrwjn" autocomplete="off">
 
+                    <div class="grupo-formulario">
+                        <label form="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label form="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label form="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem"></textarea>
+                    </div>
+                        <button type="submit">Enviar</button>
                 </form>
 
             </div>
-        
-        </section>
-
-    </footer>
+    </section>
 
 </body>
 </html>
