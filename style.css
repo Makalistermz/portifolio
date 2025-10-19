@@ -123,7 +123,9 @@ main {
     box-shadow: 0px 0px 0px 4px var(--cor4);
     outline: 2px solid var(--cor4);     /* borda externa */
     outline-offset: 13px;
-    margin-top: 78px;          /* espaço entre elas */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transform: translateY(60px);
 }
 
 #inicio {
@@ -134,9 +136,10 @@ main {
     max-width: 600px;
     word-wrap: break-word;
     text-align: left;
-    min-height: 100vh; /* ocupa a tela inteira */
+    margin-bottom: 100px;
     align-content: center;
-    margin-top: 75px;
+    padding-top: 80px;
+    transform: translateY(60px);
 }
 
 #inicio-h1 {
@@ -205,12 +208,11 @@ main {
 
 #btn1 {
     margin-right: 20px;
-    font-size: 018px;
+    font-size: 18px;
 }
 
 #btn2 {
-    font-weight: bolder;
-    font-size: 18px;
+
 }
 
 .botão-inicio:hover {
@@ -227,7 +229,7 @@ main {
     margin-left: 3px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1114px) {
     .botão-inicio {
         margin: 15px auto;       /* centraliza no meio */
         width: 80%;  
@@ -235,8 +237,17 @@ main {
         text-align: center;
     }
 
+    #btn1 {
+        font-size: 11px;
+    }
+
+    #redonda {
+        margin-top: 80px;
+        transform: translateY(30px);
+    }
+
     #inicio {
-        margin-top: -100px;
+        padding-top: 0px;
     }
 
     #sobre {
@@ -258,7 +269,7 @@ main {
     color: white;
     text-align: center;
     padding: 0px;
-    min-height: 100vh; /* ocupa a tela inteira */
+    margin-bottom: 100px;
 }
 
 #sobre-h1 {
@@ -349,7 +360,7 @@ main {
 
 #meus-servicos {
     color: white;
-    min-height: 100vh; /* ocupa a tela inteira */
+    margin-bottom: 100px;
 }
 
 #cards {
@@ -430,7 +441,7 @@ main {
 }
 
 #meus-projetos {
-    min-height: 100vh;
+    margin-bottom: 100px;
 }
 
 #meus-projetos h1 {
@@ -514,8 +525,16 @@ main {
     font-weight: bolder;
 }
 
+.projetos button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 28px;
+}
+
 #meus-certificados {
-    min-height: 100vh;
+    margin-bottom: 100px;
 }
 
 #meus-certificados h1 {
