@@ -65,20 +65,23 @@ header {
     font-size: clamp(16px, 3vw, 32px);
 }
 
+#burguer {
+        display: none;
+    }
+
 #links-header {
-    display: flex;
-    gap: 15px;
+    display: block;
     font-weight: bolder;
     padding-right: 10px;
 }
 
-
 .links-header {
+    display: inline-block;
     text-decoration: none;
     position: relative;
     margin: auto;
     font-size: clamp(11px, 2vw, 18px);
-    padding-right: 10px;
+    padding-right: 30px;  /*alterar no media para telefone!!*/
     color: var(--cor4);
     transition: 1s;
 }

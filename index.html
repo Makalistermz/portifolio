@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Makalister Mutz Zager - Portifólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/celular.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
 </head>
 <body>
 
     <header class="fade-in"> 
         <h1 id="portifólio">Portifólio</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
         <div id="links-header">
             <a href="#inicio" class="links-header">Início</a>
             <a href="#sobre" class="links-header">Sobre mim</a>
@@ -22,45 +25,7 @@
         <img src="imagens/WhatsApp Image 2025-09-23 at 20.38.42.jpeg" alt="Minha foto" id="redonda">
         <section id="inicio" class="fade-in">
 
-    <script>
-        const canvas = document.createElement("canvas");
-                canvas.id = "bg";
-                document.body.appendChild(canvas);
-                const ctx = canvas.getContext("2d");
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-                const stars = [];
-                const numStars = 100;
-                for (let i = 0; i < numStars; i++) {
-                    stars.push({
-                    x: Math.random() * canvas.width,
-                            y: Math.random() * canvas.height,
-                    radius: Math.random() * 2,
-                    dx: (Math.random() - 0.5) * 0.5,
-                    dy: (Math.random() - 0.5) * 0.5
-                    });
-                }
-                function animate() {
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    ctx.fillStyle = "blue";
-                    for (let i = 0; i < stars.length; i++) {
-                    const s = stars[i];
-                    ctx.beginPath();
-                    ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
-                    ctx.fill();
-                    s.x += s.dx;
-                    s.y += s.dy;
-                    if (s.x < 0 || s.x > canvas.width) s.dx *= -1;
-                    if (s.y < 0 || s.y > canvas.height) s.dy *= -1;
-                    }
-                            requestAnimationFrame(animate);
-                }
-                animate();
-                window.addEventListener("resize", () => {
-                    canvas.width = window.innerWidth;
-                            canvas.height = window.innerHeight;
-                });
-    </script>
+    
 
                 <p>Olá, eu sou o Makalister</p>
                 <h1 id="inicio-h1">Makalister Dev</h1>
@@ -147,6 +112,14 @@
                     <p>O Projeto Social simula a tela de um telefone, onde ao clicar nos ícones das redes sociais, o conteúdo aparece dinamicamente dentro do aparelho. O site é interativo e responsivo, pensado para mostrar de forma criativa como as redes sociais fazem parte do nosso dia a dia, além de demonstrar a aplicação de HTML, CSS e JavaScript em interfaces modernas.</p>
                     <button><a href="https://makalistermz.github.io/projeto-social/" target="_blank">Acesse</a></button>
                 </div>
+
+                <div id="social" class="projetos">
+                    <img src="imagens/login.webp" alt="redes sociais">
+                    <span>Desenvolvimento web</span>
+                    <p>Desenvolvi uma página de login moderna e totalmente responsiva, criada para funcionar perfeitamente em qualquer dispositivo, desde smartphones até desktops. O layout se adapta automaticamente ao tamanho da tela, garantindo navegação simples e uma experiência visual agradável. O projeto foi feito com HTML, CSS e JavaScript, com design organizado que deixam a interface mais profissional.</p>
+                    <button><a href="https://makalistermz.github.io/projeto-login/" target="_blank">Acesse</a></button>
+                </div>
+
             </div>
 
         </section>
@@ -177,7 +150,7 @@
                     <button><a href="https://drive.google.com/file/d/1V2W11d-odCdoNlppoj53c868M4jjAxt2/view?usp=sharing" target="_blank">Ver Certificado</a></button>
                 </div>
 
-                <div id="html-3" class="certificados">
+                <div id="html-4" class="certificados">
                     <img src="imagens/html-css.jpg" alt="HTML 5 e CSS 3">
                     <h2>Certificado de HTML 5 e CSS 3 - 4</h2>
                     <p>Concluí um curso de 40 horas em HTML5 e CSS3, aprendendo a criar páginas web estruturadas, estilizadas e responsivas. O certificado comprova meu conhecimento em desenvolvimento front-end básico, incluindo a criação de layouts, aplicação de cores, fontes e responsividade para diferentes dispositivos.</p>
@@ -275,6 +248,52 @@
     </ul>
     <p>&copy; 2025 Makalister Mutz Zager. Todos os direitos reservados</p>
     </footer>
+
+    <script>
+        const canvas = document.createElement("canvas");
+                canvas.id = "bg";
+                document.body.appendChild(canvas);
+                const ctx = canvas.getContext("2d");
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                const stars = [];
+                const numStars = 100;
+                for (let i = 0; i < numStars; i++) {
+                    stars.push({
+                    x: Math.random() * canvas.width,
+                            y: Math.random() * canvas.height,
+                    radius: Math.random() * 2,
+                    dx: (Math.random() - 0.5) * 0.5,
+                    dy: (Math.random() - 0.5) * 0.5
+                    });
+                }
+                function animate() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.fillStyle = "blue";
+                    for (let i = 0; i < stars.length; i++) {
+                    const s = stars[i];
+                    ctx.beginPath();
+                    ctx.arc(s.x, s.y, s.radius, 0, Math.PI * 2);
+                    ctx.fill();
+                    s.x += s.dx;
+                    s.y += s.dy;
+                    if (s.x < 0 || s.x > canvas.width) s.dx *= -1;
+                    if (s.y < 0 || s.y > canvas.height) s.dy *= -1;
+                    }
+                            requestAnimationFrame(animate);
+                }
+                animate();
+                window.addEventListener("resize", () => {
+                    canvas.width = window.innerWidth;
+                            canvas.height = window.innerHeight;
+                });
+
+                function clickMenu() {
+                    if (menu.style.display == 'block') {
+                        menu.style.display = 'none'
+                    } else (menu.style.display = 'block')
+                }
+    </script>
 
 </body>
 </html>
