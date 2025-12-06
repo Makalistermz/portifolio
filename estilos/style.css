@@ -66,11 +66,19 @@ header {
 }
 
 #burguer {
-        display: none;
-    }
-
-#links-header {
     display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    color: var(--cor3);
+}
+
+#menu {
+    display: none;
     font-weight: bolder;
     padding-right: 10px;
 }
@@ -79,9 +87,10 @@ header {
     display: inline-block;
     text-decoration: none;
     position: relative;
+    flex-direction: column;
     margin: auto;
     font-size: clamp(11px, 2vw, 18px);
-    padding-right: 30px;  /*alterar no media para telefone!!*/
+    padding-right: 20px;
     color: var(--cor4);
     transition: 1s;
 }
