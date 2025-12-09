@@ -67,14 +67,14 @@ header {
 
 #burguer {
     display: block;
-    color: white;
+    color: var(--cor3);
     text-align: center;
     padding: 10px;
     cursor: pointer;
 }
 
 #burguer:hover {
-    color: var(--cor3);
+    color: white;
 }
 
 #menu {
