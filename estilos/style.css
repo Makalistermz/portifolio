@@ -96,7 +96,6 @@ header {
 }
 
 .links-header::after {
-    content: '';
     position: absolute;
     width: 0;
     height: 2px;                    /* espessura da linha */

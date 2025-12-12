@@ -12,4 +12,8 @@
     #menu > a {
         display: inline-block;
     }
+
+    #btn2 {
+        transform: translate(0px, 9px);
+}
 }
