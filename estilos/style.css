@@ -222,10 +222,6 @@ main {
     font-size: 18px;
 }
 
-#btn2 {
-
-}
-
 .botão-inicio:hover {
     cursor: pointer;
     box-shadow: 0px 0px 5px 3px var(--cor5);
@@ -306,6 +302,8 @@ main {
     border-radius: 15px;
     box-shadow: 0px 0px 15px var(--cor5);
     position: relative;
+    object-fit: cover;
+    object-position: top center;
 }
 
 #sobre-texto {
