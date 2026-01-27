@@ -56,7 +56,7 @@ header {
     to {opacity: 1; transform: translateY(0px);}
 }
 
-#portifólio {
+#portifólio-titulo {
     font-weight: bold;
     color: var(--cor4);
     display: flex;
@@ -65,26 +65,16 @@ header {
     font-size: clamp(16px, 3vw, 32px);
 }
 
-#burguer {
-    display: block;
-    color: var(--cor3);
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-}
-
-#burguer:hover {
-    color: white;
-}
-
 #menu {
-    display: none;
     font-weight: bolder;
     padding-right: 10px;
 }
 
-.links-header {
-    display: inline-block;
+#voltar-menu {
+    display: none;
+}
+
+.links-header { 
     text-decoration: none;
     position: relative;
     flex-direction: column;

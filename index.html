@@ -11,14 +11,17 @@
 <body onresize="mudouTamanho()">
 
     <header class="fade-in"> 
-        <h1 id="portifólio">Portifólio</h1>
-        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
-        <nav id="menu">
-            <a href="#inicio" class="links-header">Início</a>
-            <a href="#sobre" class="links-header">Sobre mim</a>
-            <a href="#meus-projetos" class="links-header">Projetos</a>
-            <a href="#contatar" class="links-header">Contato</a>
-        </nav>
+        <h1 id="portifólio-titulo">Portifólio</h1>
+        <div id="container-menu">
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()"> menu </span>
+            <nav id="menu">
+                <p id="voltar-menu" onclick="voltarmenu()">&#8592;</p>
+                <a href="#inicio" class="links-header">Início</a>
+                <a href="#sobre" class="links-header">Sobre mim</a>
+                <a href="#meus-projetos" class="links-header">Projetos</a>
+                <a href="#contatar" class="links-header">Contato</a>
+            </nav>
+        </div>
     </header>
     <main>
 

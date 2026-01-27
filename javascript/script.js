@@ -37,7 +37,7 @@ const canvas = document.createElement("canvas");
                 });
 
 function mudouTamanho() {
-                    var menu = document.getElementById('menu')                   
+                    let menu = document.getElementById('menu')                   
                     if (window.innerWidth >= 768) {
                         menu.style.display = 'block'
                     } else {
@@ -46,7 +46,35 @@ function mudouTamanho() {
         }
 
                 function clickMenu() {
+                    let burguer = document.getElementById('burguer')
+                    let menu = document.getElementById('menu')
+
                     if (menu.style.display == 'block') {
                         menu.style.display = 'none'
-                    } else (menu.style.display = 'block')
+                    } else {
+                        menu.style.display = 'block'
+                    }
+
+                    if (burguer.style.display == 'none') {
+                        burguer.style.display = 'block'
+                    } else {
+                        burguer.style.display = 'none'
+                    }
+                }
+
+                function voltarmenu() {
+                    let burguer = document.getElementById('burguer')
+                    let menu = document.getElementById('menu')
+
+                    if (menu.style.display == 'none') {
+                        menu.style.display = 'block'
+                    } else {
+                        menu.style.display = 'none'
+                    }
+
+                    if (burguer.style.display == 'block') {
+                        burguer.style.display = 'none'
+                    } else {
+                        burguer.style.display = 'block'
+                    }
                 }

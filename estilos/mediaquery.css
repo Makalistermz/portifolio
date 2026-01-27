@@ -1,7 +1,54 @@
 @charset "UTF-8";
 
 @media  screen and (max-width: 768px) {
-    
+    #container-menu {
+        display: flex;
+    }
+
+    #burguer {
+    color: var(--cor3);
+    padding: 10px;
+    cursor: pointer;
+}
+
+    #burguer:hover {
+    color: white;
+}
+
+    #menu {
+        position: absolute;     
+        top: 0px;
+        right: 0;
+        display: none;
+        width: 100px;
+        height: 100vh;
+        text-align: center;
+        background-color: black;
+        padding-right: 0px;
+    }
+
+    #voltar-menu {
+        display: block;
+        margin-top: 10px;
+        margin-left: 10px;
+        color: var(--cor3);
+        text-align: left;
+        font-size: 20px;
+    }
+
+    #voltar-menu::after {
+        transition: width 0.3s ease;
+    }
+
+    .links-header {
+        margin-top: 20px;
+        padding-right: 6px;
+        display: inline-block;
+    }
+
+    .links-header::after {
+        transition: width 0.3s ease;
+    }
 }
 
 @media screen and (min-width: 768px) {
