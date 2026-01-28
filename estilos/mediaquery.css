@@ -16,7 +16,6 @@
 }
 
     #menu {
-        display: grid;
         position: absolute;     
         top: 0px;
         right: 0;
@@ -45,6 +44,7 @@
         margin-top: 20px;
         padding-right: 6px;
         display: inline-block;
+        font-size: 14px;
     }
 
     .links-header::after {
