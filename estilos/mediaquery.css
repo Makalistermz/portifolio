@@ -70,17 +70,3 @@
     }
 
 }
-
-@media screen and (min-width: 1115px) {
-    #btn2 {
-        transform: translate(0px, 10px);
-    }
-
-    #btn2 a {
-        transform: translate(20px, -9px);
-    }
-
-    #btn2 img {
-        transform: translate(-80px, 16px);
-    }
-}

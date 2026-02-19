@@ -181,25 +181,28 @@ main {
     50% { border-color: transparent; }
 }
 
+.botoes {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
 .botão-inicio {
     background-color: transparent;
     border: 2px solid var(--cor5);
-    margin-top: 40px;
-    height: 55px;
+    height: 65px;
     width: 200px;
-    font-weight: bolder;
-    font-size: 15px;
+    font-size: 18px;
     box-shadow: 0px 0px 5px 0px var(--cor5);
     border-radius: 10px;
-    color: var(--cor5);
-    gap: 20px;
-    transition: 0.5s;
-}
-
-.botão-inicio > a {
     text-decoration: none;
     color: var(--cor5);
-    font-weight: bolder;
+    margin-top: 30px;
+    gap: 20px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;
 }
 
 .botão-inicio > a:hover {
@@ -207,23 +210,10 @@ main {
     color: var(--cor5);
 }
 
-#btn1 {
-    margin-right: 20px;
-    font-size: 18px;
-}
-
 .botão-inicio:hover {
     cursor: pointer;
     box-shadow: 0px 0px 5px 3px var(--cor5);
     transform: translate(2px, -3px);
-}
-
-.botão-inicio > img {
-    color: var(--cor5);
-    transform: translate(-3px, 2px);
-    height: 16px;
-    margin-right: 3px;
-    margin-left: 3px;
 }
 
 @media (max-width: 1114px) {
@@ -234,9 +224,13 @@ main {
         text-align: center;
     }
 
-    #btn1 {
+    .botão-inicio {
         font-size: 11px;
+        font-weight: bold;
     }
+}
+
+
 
     #redonda {
         margin-top: 80px;
@@ -259,7 +253,6 @@ main {
         width: 100%;    
     }
 
-}
 
 #sobre {
     background-color: black;
