@@ -70,3 +70,13 @@
     }
 
 }
+
+@media screen and (max-width: 1200px) {
+    #contatar {
+        align-items: normal;
+    }
+
+    #entre-contato h2 {
+        text-align: justify;
+    }
+}

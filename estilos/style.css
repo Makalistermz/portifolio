@@ -599,6 +599,7 @@ main {
 #contatar {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     flex: 1;
 }
@@ -623,6 +624,7 @@ main {
     margin: 20px 10px;
     color: var(--cor5);
     font-size: 38px;
+    text-align: center;
 }
 
 #entre-contato h3 {
