@@ -1,0 +1,30 @@
+{
+    "projetos": [
+        {
+            "tipo_sistema": "SISTEMA WEB / FULL STACK",
+            "nome": "Fala Pommer",
+            "descrição": "Plataforma de comunicação com autenticação, perfis de acesso, setores e dashboard. Fluxo de conversas e experiência como produto, não como simples exercício.",
+            "tecnologias": ["React", "NestJS", "Prisma", "MySQL", "TypeScript"]
+        },
+        {
+            "tipo_sistema": "SISTEMA WEB / FULL STACK",
+            "nome": "EMZ Fragrance",
+            "descrição": "E-commerce visual para marketplace de perfumes, com foco em direção de arte, catálogo, interações e uma navegação limpa e deliciosa.",
+            "tecnologias": ["React", "NestJS", "Prisma", "MySQL", "JavaScript"]
+        },
+        {
+            "tipo_sistema": "SISTEMA WEB / FULL STACK",
+            "nome": "Sistema de Coleta",
+            "descrição": "Interface pública com foco em acessibilidade, informação clara e recursos úteis como pontos de coleta em mapa e experiência responsiva.",
+            "tecnologias": ["Adianti", "JavaScript", "MySQL", "PHP"]
+        },
+        {
+            "tipo_sistema": "SISTEMA WEB / FULL STACK",
+            "nome": "PIER",
+            "descrição": "Interface pública com foco em acessibilidade, informação clara e recursos úteis como pontos de coleta em mapa e experiência responsiva.",
+            "tecnologias": ["Adianti", "JavaScript", "MySQL", "PHP"]
+        }
+    ]
+}
+
+//alterar as descrições dos projetos
