@@ -8,7 +8,8 @@
             "numero_projeto": "01 — 04",
             "lado": "esquerdo",
             "caminho_img": "#",
-            "descricao_img": "Interface do sistema Fala Pommer"
+            "descricao_img": "Interface do sistema Fala Pommer",
+            "link": "#"
         },
         {
             "tipo_sistema": "SISTEMA WEB / FULL STACK",
@@ -18,7 +19,8 @@
             "numero_projeto": "02 — 04",
             "lado": "direito",
             "caminho_img": "#",
-            "descricao_img": "Interface do projeto EMZ Fragrance"
+            "descricao_img": "Interface do projeto EMZ Fragrance",
+            "link": "#"
         },
         {
             "tipo_sistema": "SISTEMA WEB / FULL STACK",
@@ -28,7 +30,8 @@
             "numero_projeto": "03 — 04",
             "lado": "esquerdo",
             "caminho_img": "#",
-            "descricao_img": "Interface do sistema de Coleta"
+            "descricao_img": "Interface do sistema de Coleta",
+            "link": "https://apps.pmsmj.es.gov.br/cronogramaColetas/"
         },
         {
             "tipo_sistema": "SISTEMA WEB / FULL STACK",
@@ -38,7 +41,8 @@
             "numero_projeto": "04 — 04",
             "lado": "direito",
             "caminho_img": "#",
-            "descricao_img": "Interface do sistema PIER"
+            "descricao_img": "Interface do sistema PIER",
+            "link": "https://pier.pmsmj.es.gov.br/"
         }
     ]
 }

@@ -59,8 +59,9 @@ dados.projetos.forEach((projeto) => {
             </ul>
 
             <a
-                href="#"
+                href="${projeto.link}"
                 class="project-link"
+                target="_blank"
                 aria-label="Ver projeto ${projeto.nome}"
             >
                 ↗
