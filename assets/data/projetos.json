@@ -3,28 +3,42 @@
         {
             "tipo_sistema": "SISTEMA WEB / FULL STACK",
             "nome": "Fala Pommer",
-            "descrição": "Plataforma de comunicação com autenticação, perfis de acesso, setores e dashboard. Fluxo de conversas e experiência como produto, não como simples exercício.",
-            "tecnologias": ["React", "NestJS", "Prisma", "MySQL", "TypeScript"]
+            "descricao": "Plataforma de comunicação projetada como produto final: combina gestão de permissões por setor, fluxos de conversa intuitivos e dashboards estratégicos para transformar a colaboração corporativa.",
+            "tecnologias": ["React", "NestJS", "Prisma", "MySQL", "TypeScript"],
+            "numero_projeto": "01 — 04",
+            "lado": "esquerdo",
+            "caminho_img": "#",
+            "descricao_img": "Interface do sistema Fala Pommer"
         },
         {
             "tipo_sistema": "SISTEMA WEB / FULL STACK",
             "nome": "EMZ Fragrance",
-            "descrição": "E-commerce visual para marketplace de perfumes, com foco em direção de arte, catálogo, interações e uma navegação limpa e deliciosa.",
-            "tecnologias": ["React", "NestJS", "Prisma", "MySQL", "JavaScript"]
+            "descricao": "E-commerce visual para marketplace de perfumes, com foco em direção de arte, catálogo, interações e uma navegação limpa e deliciosa.",
+            "tecnologias": ["React", "NestJS", "Prisma", "MySQL", "JavaScript"],
+            "numero_projeto": "02 — 04",
+            "lado": "direito",
+            "caminho_img": "#",
+            "descricao_img": "Interface do projeto EMZ Fragrance"
         },
         {
             "tipo_sistema": "SISTEMA WEB / FULL STACK",
             "nome": "Sistema de Coleta",
-            "descrição": "Interface pública com foco em acessibilidade, informação clara e recursos úteis como pontos de coleta em mapa e experiência responsiva.",
-            "tecnologias": ["Adianti", "JavaScript", "MySQL", "PHP"]
+            "descricao": "Interface pública voltada para acessibilidade e informação clara, oferecendo recursos como o mapeamento de pontos de coleta e canais para denúncia de descartes irregulares.",
+            "tecnologias": ["Adianti", "JavaScript", "MySQL", "PHP"],
+            "numero_projeto": "03 — 04",
+            "lado": "esquerdo",
+            "caminho_img": "#",
+            "descricao_img": "Interface do sistema de Coleta"
         },
         {
             "tipo_sistema": "SISTEMA WEB / FULL STACK",
-            "nome": "PIER",
-            "descrição": "Interface pública com foco em acessibilidade, informação clara e recursos úteis como pontos de coleta em mapa e experiência responsiva.",
-            "tecnologias": ["Adianti", "JavaScript", "MySQL", "PHP"]
+            "nome": "Projeto de Incentivo ao Emprego e à Renda - PIER",
+            "descricao": "Interface pública projetada para garantir acessibilidade, informação clara e serviços úteis, como a divulgação de vagas de emprego locais e regionais podendo se candidatar para as vagas de emprego.",
+            "tecnologias": ["Adianti", "JavaScript", "MySQL", "PHP"],
+            "numero_projeto": "04 — 04",
+            "lado": "direito",
+            "caminho_img": "#",
+            "descricao_img": "Interface do sistema PIER"
         }
     ]
 }
-
-//alterar as descrições dos projetos
