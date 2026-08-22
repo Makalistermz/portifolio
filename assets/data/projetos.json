@@ -18,7 +18,7 @@
             "tecnologias": ["React", "NestJS", "Prisma", "MySQL", "JavaScript"],
             "numero_projeto": "02 — 04",
             "lado": "direito",
-            "caminho_img": "#",
+            "caminho_img": "./assets/img/img_marketplace_emz.png",
             "descricao_img": "Interface do projeto EMZ Fragrance",
             "link": "#"
         },
@@ -29,7 +29,7 @@
             "tecnologias": ["Adianti", "JavaScript", "MySQL", "PHP"],
             "numero_projeto": "03 — 04",
             "lado": "esquerdo",
-            "caminho_img": "#",
+            "caminho_img": "./assets/img/img_cronograma_coleta.png",
             "descricao_img": "Interface do sistema de Coleta",
             "link": "https://apps.pmsmj.es.gov.br/cronogramaColetas/"
         },
@@ -40,7 +40,7 @@
             "tecnologias": ["Adianti", "JavaScript", "MySQL", "PHP"],
             "numero_projeto": "04 — 04",
             "lado": "direito",
-            "caminho_img": "#",
+            "caminho_img": "./assets/img/img_pier.png",
             "descricao_img": "Interface do sistema PIER",
             "link": "https://pier.pmsmj.es.gov.br/"
         }
