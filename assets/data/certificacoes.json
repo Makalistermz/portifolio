@@ -1,0 +1,32 @@
+{
+    "certificados": [
+        {
+            "nome": "HTML5 E CSS3",
+            "instituicao": "Estudonauta",
+            "horas": "200 horas",
+            "ano": "2025",
+            "link": "https://drive.google.com/file/d/1Ffv3cQIan4lo7YSYyVVPIjZ_U-Ad9G-3/view"
+        },
+        {
+            "nome": "JAVASCRIPT",
+            "instituicao": "Estudonauta",
+            "horas": "40 horas",
+            "ano": "2025",
+            "link": "https://drive.google.com/file/d/1Z8hWSAgvtX7V2aOa8Hq20J9ecjWmHyvf/view"
+        },
+        {
+            "nome": "SQLITE",
+            "instituicao": "Alura",
+            "horas": "8 horas",
+            "ano": "2026",
+            "link": "https://drive.google.com/file/d/1amRb3CMe5YHF6DRd8tXN1znfvtQ9nVE5/view"
+        },
+        {
+            "nome": "FIGMA",
+            "instituicao": "IFSULDEMINAS - CAMPUS MACHADO",
+            "horas": "30 horas",
+            "ano": "2026",
+            "link": "https://drive.google.com/file/d/1R695-bTiIaWvygMHYU8d1JUNJr3mlHY0/view"
+        }
+    ]
+}

@@ -1,16 +1,17 @@
-const resposta = await fetch("./assets/data/projetos.json");
+const respostaProjetos = await fetch("./assets/data/projetos.json");
+const respostaCertificados = await fetch("./assets/data/certificacoes.json");
 
-if (!resposta.ok) {
+if (!respostaProjetos.ok) {
     throw new Error(
-        `Erro ao carregar projetos.json: ${resposta.status}`
+        `Erro ao carregar projetos.json: ${respostaProjetos.status}`
     );
 }
 
-const dados = await resposta.json();
+const dadosProjetos = await respostaProjetos.json();
 
 const container__projetos = document.querySelector('.projects-list');
 
-dados.projetos.forEach((projeto) => {
+dadosProjetos.projetos.forEach((projeto) => {
 
     const ladoProjeto =
         projeto.lado === "esquerdo"
@@ -90,4 +91,63 @@ dados.projetos.forEach((projeto) => {
         `
     );
 
+});
+
+if (!respostaCertificados.ok) {
+    throw new Error(
+        `Erro ao carregar projetos.json: ${respostaCertificados.status}`
+    );
+}
+
+const dadosCertificado = await respostaCertificados.json();
+
+const container_certificados = document.querySelector('.certificate-list');
+
+dadosCertificado.certificados.forEach((certificado) => {
+    container_certificados.insertAdjacentHTML(
+        "beforeend",
+        `
+            <article class="certificate-item reveal">
+                <span
+                    class="certificate-arrow"
+                    aria-hidden="true"
+                >
+                    ↗
+                </span>
+
+
+                <h3>
+                    ${certificado.nome}
+                </h3>
+
+
+                <span class="certificate-school">
+                    ${certificado.instituicao}
+                </span>
+
+
+                <span class="certificate-duration">
+                    ${certificado.horas}
+                </span>
+
+
+                <span class="certificate-year">
+                    ${certificado.ano}
+                </span>
+
+
+                <a
+                    href="${certificado.link}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Ver certificado
+
+                    <span aria-hidden="true">
+                        ↗
+                    </span>
+                </a>
+
+            </article>
+        `);
 });
