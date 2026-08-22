@@ -151,3 +151,76 @@ dadosCertificado.certificados.forEach((certificado) => {
             </article>
         `);
 });
+
+const track = document.querySelector(".marquee-track");
+const group = document.querySelector(".marquee-group");
+
+let position = 0;
+let groupWidth = 0;
+
+const speed = 60;
+
+function criarCopias() {
+
+    track
+        .querySelectorAll("[data-marquee-clone]")
+        .forEach((clone) => clone.remove());
+
+
+    groupWidth = group.getBoundingClientRect().width;
+
+
+    const quantidadeCopias =
+        Math.ceil(window.innerWidth / groupWidth) + 2;
+
+
+    for (let i = 0; i < quantidadeCopias; i++) {
+
+        const clone = group.cloneNode(true);
+
+        clone.setAttribute("aria-hidden", "true");
+        clone.setAttribute("data-marquee-clone", "");
+
+        track.appendChild(clone);
+
+    }
+
+}
+
+criarCopias();
+
+
+let ultimoTempo = performance.now();
+
+function animarMarquee(tempoAtual) {
+
+    const deltaTime =
+        (tempoAtual - ultimoTempo) / 1000;
+
+    ultimoTempo = tempoAtual;
+
+
+    position -= speed * deltaTime;
+
+
+    if (Math.abs(position) >= groupWidth) {
+        position += groupWidth;
+    }
+
+
+    track.style.transform =
+        `translate3d(${position}px, 0, 0)`;
+
+
+    requestAnimationFrame(animarMarquee);
+
+}
+
+requestAnimationFrame(animarMarquee);
+
+
+window.addEventListener("resize", () => {
+
+    criarCopias();
+
+});

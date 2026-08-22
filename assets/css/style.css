@@ -597,33 +597,49 @@ ol {
 ========================================================= */
 
 .technology-marquee {
-    position: relative;
-
     width: 100%;
+    overflow: hidden;
 
     padding: 30px 0;
 
-    overflow: hidden;
-
+    border-top: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
 }
 
 .marquee-track {
+    display: flex;
+
     width: max-content;
 
+    will-change: transform;
+}
+
+.marquee-group {
     display: flex;
     align-items: center;
 
-    gap: 22px;
+    gap: 36px;
 
-    padding-inline: 50px;
+    padding-right: 36px;
+
+    flex-shrink: 0;
+}
+
+.marquee-group span {
+    flex-shrink: 0;
+
+    white-space: nowrap;
 
     color: #d8d9db;
 
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 500;
+}
 
-    white-space: nowrap;
+.marquee-group span:nth-child(even) {
+    color: var(--gray);
+
+    font-size: 0.65rem;
 }
 
 .marquee-track span:nth-child(even) {
