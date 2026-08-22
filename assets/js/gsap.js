@@ -1,4 +1,4 @@
-import Lenis from "../../node_modules/lenis/dist/lenis.mjs";
+import Lenis from "../libs/lenis/lenis.mjs";
 
 import gsap from "../libs/gsap/index.js";
 
