@@ -7,7 +7,7 @@
             "tecnologias": ["React", "NestJS", "Prisma", "MySQL", "TypeScript"],
             "numero_projeto": "01 — 04",
             "lado": "esquerdo",
-            "caminho_img": "#",
+            "caminho_img": "./assets/img/imagem_fala_pommer.png",
             "descricao_img": "Interface do sistema Fala Pommer",
             "link": "#"
         },
