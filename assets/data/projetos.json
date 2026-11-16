@@ -9,7 +9,7 @@
             "lado": "esquerdo",
             "caminho_img": "./assets/img/imagem_fala_pommer.png",
             "descricao_img": "Interface do sistema Fala Pommer",
-            "link": "#"
+            "link": "https://falapommer.santamaria.es.gov.br/"
         },
         {
             "tipo_sistema": "SISTEMA WEB / FULL STACK",
@@ -31,18 +31,18 @@
             "lado": "esquerdo",
             "caminho_img": "./assets/img/img_cronograma_coleta.png",
             "descricao_img": "Interface do sistema de Coleta",
-            "link": "https://apps.pmsmj.es.gov.br/cronogramaColetas/"
+            "link": "https://apps.santamaria.es.gov.br/cronogramaColetas"
         },
         {
             "tipo_sistema": "SISTEMA WEB / FULL STACK",
-            "nome": "Projeto de Incentivo ao Emprego e à Renda - PIER",
+            "nome": "Sistema Municipal de Empregos - SIME",
             "descricao": "Interface pública projetada para garantir acessibilidade, informação clara e serviços úteis, como a divulgação de vagas de emprego locais e regionais podendo se candidatar para as vagas de emprego.",
             "tecnologias": ["Adianti", "JavaScript", "MySQL", "PHP"],
             "numero_projeto": "04 — 04",
             "lado": "direito",
             "caminho_img": "./assets/img/img_pier.png",
             "descricao_img": "Interface do sistema PIER",
-            "link": "https://pier.pmsmj.es.gov.br/"
+            "link": "https://sime.santamaria.es.gov.br/"
         }
     ]
 }
